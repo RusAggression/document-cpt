@@ -31,10 +31,10 @@ final class Admin {
 	}
 
 	public function admin_enqueue_scripts( string $hook ): void {
-		/** @var WP_Post */
+		/** @var WP_Post|null */
 		global $post;
 
-		if ( 'document' === $post->post_type && ( 'post-new.php' === $hook || 'post.php' === $hook ) ) {
+		if ( ( 'post-new.php' === $hook || 'post.php' === $hook ) && $post !== null && 'document' === $post->post_type ) {
 			wp_enqueue_media();
 		}
 	}
