@@ -43,6 +43,7 @@ final class Admin {
 	}
 
 	public function admin_enqueue_scripts( string $hook ): void {
+		/** @var WP_Post */
 		global $post;
 
 		if ( 'document' === $post->post_type && ( 'post-new.php' === $hook || 'post.php' === $hook ) ) {
@@ -51,9 +52,9 @@ final class Admin {
 	}
 
 	public function document_meta_box_callback( WP_Post $post ): void {
-		$doc_id = get_post_meta( $post->ID, '_document_doc_id', true );
+		$doc_id = (string) get_post_meta( $post->ID, '_document_doc_id', true );
 		if ( $doc_id ) {
-			$url = get_attachment_link( $doc_id );
+			$url = get_attachment_link( (int) $doc_id );
 		} else {
 			$doc_id = 0;
 			$url    = '';
