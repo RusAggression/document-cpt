@@ -34,7 +34,7 @@ final class Admin {
 		/** @var WP_Post|null */
 		global $post;
 
-		if ( ( 'post-new.php' === $hook || 'post.php' === $hook ) && $post !== null && 'document' === $post->post_type ) {
+		if ( ( 'post-new.php' === $hook || 'post.php' === $hook ) && null !== $post && 'document' === $post->post_type ) {
 			wp_enqueue_media();
 		}
 	}
