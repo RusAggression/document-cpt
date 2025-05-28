@@ -23,19 +23,30 @@ final class DocumentPostType {
 		];
 
 		$args = [
-			'labels'             => $labels,
-			'public'             => true,
-			'has_archive'        => true,
-			'publicly_queryable' => true,
-			'query_var'          => true,
-			'rewrite'            => [ 'slug' => 'document' ],
-			'capability_type'    => 'post',
-			'hierarchical'       => false,
-			'supports'           => [ 'title' ],
-			'menu_position'      => 5,
-			'menu_icon'          => 'dashicons-media-document',
-			'show_in_rest'       => true,
-			'rest_base'          => 'documents',
+			'labels'               => $labels,
+			'public'               => true,
+			'has_archive'          => true,
+			'publicly_queryable'   => true,
+			'query_var'            => true,
+			'rewrite'              => [ 'slug' => 'document' ],
+			'capability_type'      => 'post',
+			'hierarchical'         => false,
+			'supports'             => [ 'title' ],
+			'menu_position'        => 5,
+			'menu_icon'            => 'dashicons-media-document',
+			'show_in_rest'         => true,
+			'rest_base'            => 'documents',
+			'taxonomies'           => [ 'post_tag' ],
+			'register_meta_box_cb' => function () {
+				add_meta_box(
+					'document_details',
+					__( 'Document Details', 'doc-cpt' ),
+					[ Admin::get_instance(), 'document_meta_box_callback' ],
+					'document',
+					'normal',
+					'high'
+				);
+			},
 		];
 
 		register_post_type( 'document', $args );

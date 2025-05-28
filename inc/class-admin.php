@@ -25,21 +25,9 @@ final class Admin {
 	}
 
 	public function admin_init(): void {
-		add_action( 'add_meta_boxes', [ $this, 'add_meta_boxes' ] );
 		add_action( 'admin_enqueue_scripts', [ $this, 'admin_enqueue_scripts' ] );
 		add_filter( 'wp_insert_post_data', [ $this, 'wp_insert_post_data' ] );
 		add_action( 'save_post_document', [ $this, 'save_post_document' ] );
-	}
-
-	public function add_meta_boxes(): void {
-		add_meta_box(
-			'document_details',
-			__( 'Document Details', 'doc-cpt' ),
-			[ $this, 'document_meta_box_callback' ],
-			'document',
-			'normal',
-			'high'
-		);
 	}
 
 	public function admin_enqueue_scripts( string $hook ): void {

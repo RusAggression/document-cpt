@@ -24,7 +24,7 @@ msgstr "Document CPT"
 msgid "Prometheus"
 msgstr "Prometheus"
 
-#: inc/class-admin.php:37
+#: inc/class-documentposttype.php:43
 msgid "Document Details"
 msgstr "Деталі документа"
 
@@ -32,11 +32,6 @@ msgstr "Деталі документа"
 msgctxt "post type general name"
 msgid "Documents"
 msgstr "Документи"
-
-#: inc/class-documentposttype.php:13
-msgctxt "post type singular name"
-msgid "Document"
-msgstr "Документ"
 
 #: inc/class-documentposttype.php:14
 msgctxt "admin menu"
@@ -99,3 +94,8 @@ msgstr "Виберіть PDF-документ"
 #: views/document-metabox.php:55
 msgid "Use this document"
 msgstr "Використати цей документ"
+
+#: inc/class-documentposttype.php:13
+msgctxt "post type singular name"
+msgid "Document"
+msgstr "Документ"

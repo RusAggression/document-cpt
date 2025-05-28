@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-05-27T14:22:07+00:00\n"
+"POT-Creation-Date: 2025-05-28T03:57:51+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: doc-cpt\n"
@@ -22,10 +22,6 @@ msgstr ""
 #. Author of the plugin
 #: index.php
 msgid "Prometheus"
-msgstr ""
-
-#: inc/class-admin.php:37
-msgid "Document Details"
 msgstr ""
 
 #: inc/class-documentposttype.php:12
@@ -74,6 +70,10 @@ msgstr ""
 
 #: inc/class-documentposttype.php:22
 msgid "No documents found in trash"
+msgstr ""
+
+#: inc/class-documentposttype.php:43
+msgid "Document Details"
 msgstr ""
 
 #: views/document-metabox.php:26
