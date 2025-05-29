@@ -24,7 +24,7 @@ msgstr "Document CPT"
 msgid "Prometheus"
 msgstr "Prometheus"
 
-#: inc/class-documentposttype.php:43
+#: inc/class-admin.php:37
 msgid "Document Details"
 msgstr "Деталі документа"
 
@@ -48,6 +48,7 @@ msgid "Add New Document"
 msgstr "Додати новий документ"
 
 #: inc/class-documentposttype.php:17
+#: inc/class-documenttaxonomy.php:18
 msgid "Edit Document"
 msgstr "Редагувати документ"
 
@@ -56,10 +57,12 @@ msgid "New Document"
 msgstr "Новий документ"
 
 #: inc/class-documentposttype.php:19
+#: inc/class-documenttaxonomy.php:20
 msgid "View Document"
 msgstr "Переглянути документ"
 
 #: inc/class-documentposttype.php:20
+#: inc/class-documenttaxonomy.php:25
 msgid "Search Documents"
 msgstr "Шукати документи"
 
@@ -99,3 +102,65 @@ msgstr "Використати цей документ"
 msgctxt "post type singular name"
 msgid "Document"
 msgstr "Документ"
+
+#: inc/class-documenttaxonomy.php:12
+msgctxt "Taxonomy General Name"
+msgid "Documents"
+msgstr "Документи"
+
+#: inc/class-documenttaxonomy.php:13
+msgctxt "Taxonomy Singular Name"
+msgid "Document"
+msgstr "Документ"
+
+#: inc/class-documenttaxonomy.php:14
+msgid "Documents"
+msgstr "Документи"
+
+#: inc/class-documenttaxonomy.php:15
+msgid "All Documents"
+msgstr "Усі документи"
+
+#: inc/class-documenttaxonomy.php:16
+msgid "New Document Name"
+msgstr "Назва нового документа"
+
+#: inc/class-documenttaxonomy.php:17
+msgid "Add Document"
+msgstr "Додати документ"
+
+#: inc/class-documenttaxonomy.php:19
+msgid "Update Document"
+msgstr "Оновити документ"
+
+#: inc/class-documenttaxonomy.php:21
+msgid "Separate documents with commas"
+msgstr "Розділяйте документи комами"
+
+#: inc/class-documenttaxonomy.php:22
+msgid "Add or remove documents"
+msgstr "Додати або видалити документи"
+
+#: inc/class-documenttaxonomy.php:23
+msgid "Choose from the most used"
+msgstr "Виберіть із найуживаніших"
+
+#: inc/class-documenttaxonomy.php:24
+msgid "Popular Documents"
+msgstr "Популярні документи"
+
+#: inc/class-documenttaxonomy.php:26
+msgid "Not Found"
+msgstr "Не знайдено"
+
+#: inc/class-documenttaxonomy.php:27
+msgid "No documents"
+msgstr "Документів немає"
+
+#: inc/class-documenttaxonomy.php:28
+msgid "Documents list"
+msgstr "Список документів"
+
+#: inc/class-documenttaxonomy.php:29
+msgid "Documents list navigation"
+msgstr "Навігація списком документів"

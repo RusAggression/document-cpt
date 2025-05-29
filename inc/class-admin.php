@@ -25,9 +25,21 @@ final class Admin {
 	}
 
 	public function admin_init(): void {
+		add_action( 'add_meta_boxes', [ $this, 'add_meta_boxes' ] );
 		add_action( 'admin_enqueue_scripts', [ $this, 'admin_enqueue_scripts' ] );
 		add_filter( 'wp_insert_post_data', [ $this, 'wp_insert_post_data' ] );
 		add_action( 'save_post_document', [ $this, 'save_post_document' ] );
+	}
+
+	public function add_meta_boxes(): void {
+		add_meta_box(
+			'document_details',
+			__( 'Document Details', 'doc-cpt' ),
+			[ $this, 'document_meta_box_callback' ],
+			'document',
+			'normal',
+			'high'
+		);
 	}
 
 	public function admin_enqueue_scripts( string $hook ): void {
@@ -42,7 +54,7 @@ final class Admin {
 	public function document_meta_box_callback( WP_Post $post ): void {
 		$doc_id = (string) get_post_meta( $post->ID, '_document_doc_id', true );
 		if ( $doc_id ) {
-			$url = get_attachment_link( (int) $doc_id );
+			$url = wp_get_attachment_url( (int) $doc_id );
 		} else {
 			$doc_id = 0;
 			$url    = '';

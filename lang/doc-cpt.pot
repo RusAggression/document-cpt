@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-05-28T03:57:51+00:00\n"
+"POT-Creation-Date: 2025-05-29T00:59:27+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: doc-cpt\n"
@@ -22,6 +22,10 @@ msgstr ""
 #. Author of the plugin
 #: index.php
 msgid "Prometheus"
+msgstr ""
+
+#: inc/class-admin.php:37
+msgid "Document Details"
 msgstr ""
 
 #: inc/class-documentposttype.php:12
@@ -49,6 +53,7 @@ msgid "Add New Document"
 msgstr ""
 
 #: inc/class-documentposttype.php:17
+#: inc/class-documenttaxonomy.php:18
 msgid "Edit Document"
 msgstr ""
 
@@ -57,10 +62,12 @@ msgid "New Document"
 msgstr ""
 
 #: inc/class-documentposttype.php:19
+#: inc/class-documenttaxonomy.php:20
 msgid "View Document"
 msgstr ""
 
 #: inc/class-documentposttype.php:20
+#: inc/class-documenttaxonomy.php:25
 msgid "Search Documents"
 msgstr ""
 
@@ -72,8 +79,66 @@ msgstr ""
 msgid "No documents found in trash"
 msgstr ""
 
-#: inc/class-documentposttype.php:43
-msgid "Document Details"
+#: inc/class-documenttaxonomy.php:12
+msgctxt "Taxonomy General Name"
+msgid "Documents"
+msgstr ""
+
+#: inc/class-documenttaxonomy.php:13
+msgctxt "Taxonomy Singular Name"
+msgid "Document"
+msgstr ""
+
+#: inc/class-documenttaxonomy.php:14
+msgid "Documents"
+msgstr ""
+
+#: inc/class-documenttaxonomy.php:15
+msgid "All Documents"
+msgstr ""
+
+#: inc/class-documenttaxonomy.php:16
+msgid "New Document Name"
+msgstr ""
+
+#: inc/class-documenttaxonomy.php:17
+msgid "Add Document"
+msgstr ""
+
+#: inc/class-documenttaxonomy.php:19
+msgid "Update Document"
+msgstr ""
+
+#: inc/class-documenttaxonomy.php:21
+msgid "Separate documents with commas"
+msgstr ""
+
+#: inc/class-documenttaxonomy.php:22
+msgid "Add or remove documents"
+msgstr ""
+
+#: inc/class-documenttaxonomy.php:23
+msgid "Choose from the most used"
+msgstr ""
+
+#: inc/class-documenttaxonomy.php:24
+msgid "Popular Documents"
+msgstr ""
+
+#: inc/class-documenttaxonomy.php:26
+msgid "Not Found"
+msgstr ""
+
+#: inc/class-documenttaxonomy.php:27
+msgid "No documents"
+msgstr ""
+
+#: inc/class-documenttaxonomy.php:28
+msgid "Documents list"
+msgstr ""
+
+#: inc/class-documenttaxonomy.php:29
+msgid "Documents list navigation"
 msgstr ""
 
 #: views/document-metabox.php:26

@@ -37,16 +37,6 @@ final class DocumentPostType {
 			'show_in_rest'         => true,
 			'rest_base'            => 'documents',
 			'taxonomies'           => [ 'post_tag' ],
-			'register_meta_box_cb' => function (): void {
-				add_meta_box(
-					'document_details',
-					__( 'Document Details', 'doc-cpt' ),
-					[ Admin::get_instance(), 'document_meta_box_callback' ],
-					'document',
-					'normal',
-					'high'
-				);
-			},
 		];
 
 		register_post_type( 'document', $args );

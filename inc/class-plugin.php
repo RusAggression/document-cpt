@@ -29,11 +29,13 @@ final class Plugin {
 
 	public function activate(): void {
 		DocumentPostType::register();
+		DocumentTaxonomy::register();
 		// phpcs:ignore WordPressVIPMinimum.Functions.RestrictedFunctions.flush_rewrite_rules_flush_rewrite_rules
 		flush_rewrite_rules();
 	}
 
 	public function deactivate(): void {
+		DocumentTaxonomy::unregister();
 		DocumentPostType::unregister();
 		// phpcs:ignore WordPressVIPMinimum.Functions.RestrictedFunctions.flush_rewrite_rules_flush_rewrite_rules
 		flush_rewrite_rules();
@@ -47,5 +49,6 @@ final class Plugin {
 		add_action( 'rest_api_init', [ REST::class, 'get_instance' ] );
 
 		DocumentPostType::register();
+		DocumentTaxonomy::register();
 	}
 }
